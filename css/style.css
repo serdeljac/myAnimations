@@ -1,0 +1,33 @@
+/* GLOBAL DEFAULTS */
+* { margin: 0; padding: 0; }
+body {width: 100%;}
+ul {list-style-type: none;}
+
+a {text-decoration: underline;}
+a:link {color: #F00}
+a:visited {color: #0F0}
+a:hover {color: #F0F}
+a:active {color: #00F}
+
+.container {
+	background: red;
+	}
+	
+.title {
+	width: 60%;
+	margin: 30px auto 0;
+	}
+	
+@media (max-width: 768px) {
+	.title {width: 85%;}
+	}
+	
+.title img {
+	width: 100%;
+	}
+	
+.animation-display {
+	width: 95%;
+	margin: 30px auto 0;
+	}
+	
