@@ -1,8 +1,8 @@
-/* GLOBAL DEFAULTS */
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500&subset=latin,latin-ext);
+/* ______GLOBAL ATTRIBUTES_______________________________________ */
 * { margin: 0; padding: 0; }
-body {width: 100%;}
+body {width: 100%; padding-bottom: 50px;}
 ul {list-style-type: none;}
-
 a {text-decoration: underline;}
 a:link {color: #F00}
 a:visited {color: #0F0}
@@ -10,9 +10,9 @@ a:hover {color: #F0F}
 a:active {color: #00F}
 
 .container {
-	background: red;
 	}
-	
+
+/* ______TITLE____________________________________________________ */	
 .title {
 	width: 60%;
 	margin: 30px auto 0;
@@ -25,9 +25,47 @@ a:active {color: #00F}
 .title img {
 	width: 100%;
 	}
-	
-.animation-display {
-	width: 95%;
+/* ______SELECTION_______________________________________________ */
+.animation-selection {
+	width: 80%;
+	padding: 2%;
 	margin: 30px auto 0;
+	border: 5px groove #000;
+	height: 150px;
 	}
+
+.animation-selection select {
+	width: 30%;
+	padding: 0;
+	padding-left: 2%;
+	font: bold 1.5em 'Poppins', sans-serif;
+	}
+
+/* ______DISPLAY_________________________________________________ */
+.animation-display {
+	width: 94%;
+	padding: 3%;
+	margin: 30px auto 0;
+	border: 5px groove #000;
+	}
+	
+.display-title h2{
+	text-align: center;
+	letter-spacing: 10px;
+	font: bold 10em 'Poppins', sans-serif;
+	}
+	
+.display-text p{
+	text-indent: 100px;
+	font: bold 2em 'Poppins', sans-serif;	
+	}	
+	
+/* ______SCRIPT__________________________________________________ */
+	
+	
+	
+	
+	
+	
+	
 	
