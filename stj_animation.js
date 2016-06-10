@@ -16,23 +16,8 @@ $(document).ready(function() {
 		}
 	};
 
-	/* Force to center the title by grabbing the sum width/height of characters
-	    and adding them to outer div. Adjust if needed here. */
-	function centerTitle() {
-		var sumW = 0;
-		var sumH = 0;
-		$('.display-title div').each(function() {
-			sumW += $(this).outerWidth();
-			sumH = $(this).outerHeight();
-		});
-		$(".display-title").width(sumW + 20).height(sumH).css("margin", "20px auto");
-	};
-
 	appendTitle();
-	centerTitle();
-	$(window).resize(function() {
-		centerTitle();
-	});
+	
 	
 	
 	

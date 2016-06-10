@@ -1,0 +1,34 @@
+----------------------------------------------------------------------------------------------------------------------------------
+All Animations are created by Stjepan Erdeljac (2016)
+----------------------------------------------------------------------------------------------------------------------------------
+
+What are these animations?
+
+These animations are used to animate titles of various websites as part of an introduction. Though
+they are not set in stone, I have made a guideline on how to implement and edit the CSS/JS scripts
+for your conveience.
+
+What do I need?
+
+Not much, just the Zip file you can download from GitHub containing my animation and jquery
+added above the stj_animations.js script.
+
+How to I add these to my site?
+
+Easily, just follow these instructions:
+	1) Copy the "stj.animation.css" and "stj.animation.js" info your web folder
+	2) Add the following links to the web page"
+		a) <link rel="stylesheet" href="stj_animation.css" media="all"/>
+		b)	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+		c) <script src="stj_animation.js"></script>
+	3) Next add the two classes to a div tag, "display-title" and "<animation name>"
+
+	EX. <div class="display-title pulse">YOUR TITLE HERE</div>
+	
+	NOTE: The animation requires you to use straight text into a DIV tag. The JavaScript will
+				break each chracter you placed into the HTML.
+
+Can I add a space in my title?
+
+Unfortunatly, not in my current version. For now, you can add a character like "." or "_" to
+seperate words. I will be working to fix this. 

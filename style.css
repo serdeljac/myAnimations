@@ -7,7 +7,9 @@
 @media (max-width: 768px) {
 	.title {width: 85%;}
 	}
-
+	
+hr {width: 100%;}
+	
 .info {
 	width: 100%;
 	margin: auto;
@@ -22,8 +24,8 @@
 	
 
 .animation-container {
-	width: 80%;
-	padding: 2%;
+	width: 100%;
+	padding: 2% 0;
 	margin: 30px auto 0;
 	}
 
@@ -62,7 +64,7 @@
 	font-size: 25px;
 	background: #c2c2c2;
 	height: 40px;
-	width: 22%;
+	width: 250px;
 	text-decoration: none;
 	}
 
@@ -72,13 +74,11 @@
 	}
 
 @media (max-width: 992px) {
-	.animation-container select {margin-left: 5%;width: 40%;}
-	.mybtn {margin-left: 5%; width: 40%;}
+	.animation-container select {margin-left: 90px;width: 250px;}
 	}
-
-@media (max-width: 500px) {
-	.animation-container select {margin-left: 1%; width: 70%;}
-	.mybtn {margin-left: 1%; width: 26%;}
+	
+@media (max-width: 768px) {
+	.animation-container select {width: 90%; margin: 20px 5%;}
 	}
 
 .display-title {
@@ -87,17 +87,18 @@
 	font-family: 'Poppins', sans-serif;
 	background: #FFF;
 	padding: 0;
+	margin-left: 15%
 	}
 	
 .display-title div {position: relative; float: left;}
 	
 @media (max-width: 992px) {
-	.display-title {font-size: 7em}
+	.display-title {font-size: 7em; margin-left: 10%}
 	.info div {width: 100%;}
 	}
 	
 @media (max-width: 768px) {
-	.display-title {font-size: 5em}
+	.display-title {font-size: 5em; margin-left: 17%}
 	}
 	
 @media (max-width: 500px) {
