@@ -12,36 +12,40 @@
 </head>
 <body>
 	<div class="container">
+	
 		<div class="title">
 			<img src="title.png" alt="Stjepan.Animations" />
 		</div>
-		
-		<div class="animation-selection">
-			<select class="form-control input-lg" for="animate">
-				<option value="choose">Select...</option>
-				<option value="choose">Select...</option>
+
+		<form class="animation-container checkbox">
+			<select class="form-control anim-select"  name="animate">
+				
+				<optgroup label="Loops" class="loop">
+					<option value="fadeslide" >Fade_Slide</option>
+					<option value="pulse" >Pulse</option>
+					<option value="wave" >Wave</option>
+					<option value="flashlgt" >Flashing Lights</option>
+				</optgroup>
+				<optgroup label="One Time Show">
+					<option value="fallinplace" >Fall in place</option>
+					<option value="fadein" >FadeIn</option>
+					<option value="zoomin" >ZoomIn</option>
+				</optgroup>
 			</select>
-		</div>
+			 <input type="button" class="mybtn play" value="Animate!">
+		</form>
 		
-		<div class="animation-display">
-			<div class="display-title"><h2>ANIMATION</h2></div>
-			<div class="display-text">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id suscipit leo. Nunc 
-				ac imperdiet lorem. Duis congue tincidunt porttitor. Cum sociis natoque penatibus 
-				et magnis dis parturient montes, nascetur ridiculus mus. Etiam vehicula malesuada 
-				magna eget ultricies. Nam non mi cursus, condimentum dui a, sodales purus. 
-				Curabitur posuere aliquet lectus, et pharetra elit lacinia non. Aliquam erat volutpat. 
-				Praesent auctor elit nec libero lobortis tempor. Curabitur interdum id lacus eu interdum.</p>
-			</div>
-		</div>
+		<!-- ADD CLASS "display-title" FOR ANIMATIONS-->
+		<div class="display-title" >ANIMATION</div>
 		
-		<div class="script-css"></div>
-		<div class="script-javascript"></div>
-		<footer></footer>
+		<hr />
+		
+		<div class="info">
+			<div>Download from GitHub</div>
+			<div>View my Portfolio</div>
+		</div>
+
 	</div>
-
-
-
 	<script src="scripts/java.js"></script>
 </body>
 </html>

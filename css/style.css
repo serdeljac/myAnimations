@@ -9,63 +9,262 @@ a:visited {color: #0F0}
 a:hover {color: #F0F}
 a:active {color: #00F}
 
-.container {
-	}
-
 /* ______TITLE____________________________________________________ */	
-.title {
-	width: 60%;
-	margin: 30px auto 0;
-	}
+.title {width: 60%;	margin: 30px auto 0;}
+.title img {width: 100%;}
 	
 @media (max-width: 768px) {
 	.title {width: 85%;}
+	
 	}
 	
-.title img {
-	width: 100%;
-	}
 /* ______SELECTION_______________________________________________ */
-.animation-selection {
+.info {
+	width: 100%;
+	margin: auto;
+	}
+	
+.info div {
+	font-size: 1.6em;
+	margin: 30px auto;
+	padding: 0 30px;
+	text-align: center;
+	}
+	
+/* ______SELECTION_______________________________________________ */
+.animation-container {
 	width: 80%;
 	padding: 2%;
 	margin: 30px auto 0;
-	border: 5px groove #000;
-	height: 150px;
 	}
 
-.animation-selection select {
+.animation-container select {
+	margin-left: 21%;
 	width: 30%;
 	padding: 0;
 	padding-left: 2%;
 	font: bold 1.5em 'Poppins', sans-serif;
+	height: 40px;
+	display: inline;
+	}
+	
+.animation-container select optgroup {font: normal .75em 'Poppins', sans-serif; padding: 0;}
+.animation-container select option {font: normal .65em 'Poppins', sans-serif;}
+
+.animation-container label {
+	margin: 10px 0px;
+	font-size: 20px;
+	}
+	
+.animation-container input[type=checkbox] {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	margin: .4em;
+	}
+	
+.animation-container .mybtn {
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	margin-left: 5%;
+	text-shadow: 1px 3px 6px #000;
+	font-family: Georgia;
+	color: #fff;
+	font-size: 25px;
+	background: #c2c2c2;
+	height: 40px;
+	width: 22%;
+	text-decoration: none;
 	}
 
-/* ______DISPLAY_________________________________________________ */
-.animation-display {
-	width: 94%;
-	padding: 3%;
-	margin: 30px auto 0;
-	border: 5px groove #000;
+.animation-container .mybtn:hover {
+	background: #969696;
+	text-decoration: none;
+	}
+
+.animation-container .mybtn:active {border: 0;}
+
+
+@media (max-width: 992px) {
+	.animation-container select {margin-left: 5%;width: 40%;}
+	.mybtn {margin-left: 5%; width: 40%;}
 	}
 	
-.display-title h2{
-	text-align: center;
-	letter-spacing: 10px;
-	font: bold 10em 'Poppins', sans-serif;
+
+	
+@media (max-width: 500px) {
+	.animation-container select {margin-left: 1%; width: 70%;}
+	.mybtn {margin-left: 1%; width: 26%;}
 	}
-	
-.display-text p{
-	text-indent: 100px;
-	font: bold 2em 'Poppins', sans-serif;	
-	}	
-	
+
 /* ______SCRIPT__________________________________________________ */
 	
+.display-title {
+	margin: 30px auto 0;
+	font-weight: bold;
+	font-size: 10em;
+	font-family: 'Poppins', sans-serif;
+	background: #FFF;
+	padding: 0;
+	}
 	
+.display-title div {position: relative; float: left;}
 	
+@media (max-width: 992px) {
+	.display-title {font-size: 7em}
+	.info div {width: 100%;}
+	}
 	
+@media (max-width: 768px) {
+	.display-title {font-size: 5em}
+	}
 	
+@media (max-width: 500px) {
+	.display-title {font-size: 3em}
+	}
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+.fadeslide {
+	-webkit-animation: fadeslide 3s linear infinite;
+	animation: fadeslide 3s linear infinite;
+	animation: fadeslide 3s linear infinite;
+	}
 	
+@-webkit-keyframes fadeslide {
+	0%, 100% {opacity: 1;}
+	50% {opacity: .3;}
+	}
 	
+@keyframes fadeslide {
+	0%, 100% {opacity: 1;}
+	50% {opacity: .3;}
+	}
 	
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+.fadein {
+	-webkit-animation: fadein 4s 1;
+	animation: fadein 4s 1;
+	opacity: 0;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	}
+	
+@-webkit-keyframes fadein {
+	0% {opacity: 0; transform: rotateY(90deg)}
+	15%, 100% {opacity: 1; transform: rotateY(0deg);}
+	}
+	
+@keyframes fadein {
+	0% {opacity: 0; transform: rotateY(90deg)}
+	15%, 100% {opacity: 1; transform: rotateY(0deg);}
+	}
+
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+	
+.pulse {
+	-webkit-animation: pulse 2s linear infinite;
+	animation: pulse 2s linear infinite;
+	}
+	
+@-webkit-keyframes pulse {
+	0%, 100% {text-shadow: 1px 1px 1px #000;}
+	50% {text-shadow: 5px 5px 5px #000;}
+	}
+	
+@keyframes pulse {
+	0%, 100% {text-shadow: 1px 1px 1px #000;}
+	50% {text-shadow: 5px 5px 5px #000;}
+	}
+	
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+	
+.wave {
+	-webkit-animation: wave 2s linear infinite;
+	animation: wave 2s linear infinite;
+	}
+	
+@-webkit-keyframes wave {
+	0%, 100% {left: 0; top: 0}
+	15% {top: 20px;}
+	75% {top: -20px;}
+	}
+	
+@keyframes wave {
+	0%, 100% {left: 0; top: 0}
+	15% {top: 20px;}
+	75% {top: -20px;}
+	}
+
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+.flashlgt {
+	-webkit-animation: flashlgt 2s linear infinite;
+	animation: flashlgt 2s linear infinite;
+	}
+	
+@-webkit-keyframes flashlgt {
+	0%, 20%, 100% {text-shadow:  0px 0px 0px rgba(255,0,0,1);}
+	10% {text-shadow:  0px 0px 30px rgba(255,0,0,1);}
+	}
+	
+@keyframes flashlgt {
+	0%, 20%, 100% {text-shadow:  0px 0px 0px rgba(255,255,0,1);}
+	10% {text-shadow:  0px 0px 30px rgba(255,255,0,1);}
+	}
+
+
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+.fallinplace {
+	-webkit-animation: fallinplace 2s linear 1;
+	animation: fallinplace 2s linear 1;
+	transform: translateY(-300%);
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	}
+	
+@-webkit-keyframes fallinplace {
+	0% {transform: translateY(-300%);}
+	40% {transform: translateY(20%);}
+	60%, 100% {transform: translateY(0%);}
+	}
+	
+@keyframes fallinplace {
+	0% {transform: translateY(-300%);}
+	40% {transform: translateY(20%);}
+	60%, 100% {transform: translateY(0%);}
+	}
+
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+.zoomin {
+	-webkit-animation: zoomin 1s linear 1;
+	animation: zoomin 1s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	font-size: 0em;
+	opacity: 0; 
+	}
+	
+@-webkit-keyframes zoomin {
+	0% {opacity: 0; font-size: 0em;}
+	5% {opacity: 1;}
+	100% {opacity: 1; font-size: 1em;}
+	}
+	
+@keyframes zoomin {
+	0% {opacity: 0; font-size: 0em;}
+	5% {opacity: 1;}
+	100% {opacity: 1; font-size: 1em;}
+	}
+
+
+
