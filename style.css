@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500&subset=latin,latin-ext);
+
+	
+.title {width: 60%;	margin: 30px auto 0;}
+.title img {width: 100%;}
+	
+@media (max-width: 768px) {
+	.title {width: 85%;}
+	}
+
+.info {
+	width: 100%;
+	margin: auto;
+	}
+	
+.info div {
+	font-size: 1.6em;
+	margin: 30px auto;
+	padding: 0 30px;
+	text-align: center;
+	}
+	
+
+.animation-container {
+	width: 80%;
+	padding: 2%;
+	margin: 30px auto 0;
+	}
+
+.animation-container select {
+	margin-left: 21%;
+	width: 30%;
+	padding: 0;
+	padding-left: 2%;
+	font: bold 1.5em 'Poppins', sans-serif;
+	height: 40px;
+	display: inline;
+	}
+	
+.animation-container select optgroup {font: normal .75em 'Poppins', sans-serif; padding: 0;}
+.animation-container select option {font: normal .65em 'Poppins', sans-serif;}
+
+.animation-container label {
+	margin: 10px 0px;
+	font-size: 20px;
+	}
+	
+.animation-container input[type=checkbox] {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	margin: .4em;
+	}
+	
+.animation-container .mybtn {
+	-webkit-border-radius: 10;
+	-moz-border-radius: 10;
+	border-radius: 10px;
+	margin-left: 5%;
+	text-shadow: 1px 3px 6px #000;
+	font-family: Georgia;
+	color: #fff;
+	font-size: 25px;
+	background: #c2c2c2;
+	height: 40px;
+	width: 22%;
+	text-decoration: none;
+	}
+
+.animation-container .mybtn:hover {
+	background: #969696;
+	text-decoration: none;
+	}
+
+@media (max-width: 992px) {
+	.animation-container select {margin-left: 5%;width: 40%;}
+	.mybtn {margin-left: 5%; width: 40%;}
+	}
+
+@media (max-width: 500px) {
+	.animation-container select {margin-left: 1%; width: 70%;}
+	.mybtn {margin-left: 1%; width: 26%;}
+	}
+
+.display-title {
+	font-weight: bold;
+	font-size: 10em;
+	font-family: 'Poppins', sans-serif;
+	background: #FFF;
+	padding: 0;
+	}
+	
+.display-title div {position: relative; float: left;}
+	
+@media (max-width: 992px) {
+	.display-title {font-size: 7em}
+	.info div {width: 100%;}
+	}
+	
+@media (max-width: 768px) {
+	.display-title {font-size: 5em}
+	}
+	
+@media (max-width: 500px) {
+	.display-title {font-size: 3em}
+	}
+	
+	
+	
+	

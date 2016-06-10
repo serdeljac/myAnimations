@@ -1,127 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,500&subset=latin,latin-ext);
-/* ______GLOBAL ATTRIBUTES_______________________________________ */
-* { margin: 0; padding: 0; }
-body {width: 100%; padding-bottom: 50px;}
-ul {list-style-type: none;}
-a {text-decoration: underline;}
-a:link {color: #F00}
-a:visited {color: #0F0}
-a:hover {color: #F0F}
-a:active {color: #00F}
-
-/* ______TITLE____________________________________________________ */	
-.title {width: 60%;	margin: 30px auto 0;}
-.title img {width: 100%;}
-	
-@media (max-width: 768px) {
-	.title {width: 85%;}
-	
-	}
-	
-/* ______SELECTION_______________________________________________ */
-.info {
-	width: 100%;
-	margin: auto;
-	}
-	
-.info div {
-	font-size: 1.6em;
-	margin: 30px auto;
-	padding: 0 30px;
-	text-align: center;
-	}
-	
-/* ______SELECTION_______________________________________________ */
-.animation-container {
-	width: 80%;
-	padding: 2%;
-	margin: 30px auto 0;
-	}
-
-.animation-container select {
-	margin-left: 21%;
-	width: 30%;
-	padding: 0;
-	padding-left: 2%;
-	font: bold 1.5em 'Poppins', sans-serif;
-	height: 40px;
-	display: inline;
-	}
-	
-.animation-container select optgroup {font: normal .75em 'Poppins', sans-serif; padding: 0;}
-.animation-container select option {font: normal .65em 'Poppins', sans-serif;}
-
-.animation-container label {
-	margin: 10px 0px;
-	font-size: 20px;
-	}
-	
-.animation-container input[type=checkbox] {
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-	margin: .4em;
-	}
-	
-.animation-container .mybtn {
-	-webkit-border-radius: 10;
-	-moz-border-radius: 10;
-	border-radius: 10px;
-	margin-left: 5%;
-	text-shadow: 1px 3px 6px #000;
-	font-family: Georgia;
-	color: #fff;
-	font-size: 25px;
-	background: #c2c2c2;
-	height: 40px;
-	width: 22%;
-	text-decoration: none;
-	}
-
-.animation-container .mybtn:hover {
-	background: #969696;
-	text-decoration: none;
-	}
-
-.animation-container .mybtn:active {border: 0;}
-
-
-@media (max-width: 992px) {
-	.animation-container select {margin-left: 5%;width: 40%;}
-	.mybtn {margin-left: 5%; width: 40%;}
-	}
-	
-
-	
-@media (max-width: 500px) {
-	.animation-container select {margin-left: 1%; width: 70%;}
-	.mybtn {margin-left: 1%; width: 26%;}
-	}
-
-/* ______SCRIPT__________________________________________________ */
-	
-.display-title {
-	margin: 30px auto 0;
-	font-weight: bold;
-	font-size: 10em;
-	font-family: 'Poppins', sans-serif;
-	background: #FFF;
-	padding: 0;
-	}
-	
-.display-title div {position: relative; float: left;}
-	
-@media (max-width: 992px) {
-	.display-title {font-size: 7em}
-	.info div {width: 100%;}
-	}
-	
-@media (max-width: 768px) {
-	.display-title {font-size: 5em}
-	}
-	
-@media (max-width: 500px) {
-	.display-title {font-size: 3em}
-	}
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 
@@ -266,5 +142,126 @@ a:active {color: #00F}
 	100% {opacity: 1; font-size: 1em;}
 	}
 
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
 
+.boomerang {
+	-webkit-animation: boomerang 1s linear 1;
+	animation: boomerang 1s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	}
+	
+@-webkit-keyframes boomerang {
+	0% {
+		opacity: 0;
+		transform: matrix3d(2.92, 0, 0, 0, 
+                    -0.006667, 0.003334, 0, -0.000267, 
+                    0, 0, 1, 0, 
+                    98, 388.999969, 0, 1);
+		}
+	5% {opacity: 1;}
+	100% {transform: matrix3d(1, 0, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, 0, 1, 0, 
+                    0, 0, 0, 1);
+				opacity: 1;
+		}
+	}
+	
+@keyframes boomerang {
+	0% {
+		opacity: 0;
+		transform: matrix3d(2.92, 0, 0, 0, 
+                    -0.006667, 0.003334, 0, -0.000267, 
+                    0, 0, 1, 0, 
+                    98, 388.999969, 0, 1);
+		}
+	5% {opacity: 1;}
+	100% {transform: matrix3d(1, 0, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, 0, 1, 0, 
+                    0, 0, 0, 1);
+				opacity: 1;
+		}
+	}
 
+/*---------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------*/
+
+.rise {
+	-webkit-animation: rise 1s linear 1;
+	animation: rise 1s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	}
+	
+@-webkit-keyframes rise {
+0% {transform: matrix3d(.5, .9, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, .5, 1, 0, 
+                    0, 0, 0, 1);
+			transform-origin: 0px 0px 0px;
+	}
+30% {transform: matrix3d(1, .5, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, 0, 1, 0, 
+                    0, -100, 0, 1);
+		opacity: 1;
+	}
+60% {transform: matrix3d(1, -.5, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, 0, 1, 0, 
+                    0, -50, 0, 1);
+	}
+100% {transform: matrix3d(1, 0, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, 0, 1, 0, 
+                    0, 0, 0, 1);
+			opacity: 1;
+	}
+	}
+	
+@keyframes rise {
+0% {transform: matrix3d(.5, .9, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, .5, 1, 0, 
+                    0, 0, 0, 1);
+			transform-origin: 0px 0px 0px;
+	}
+30% {transform: matrix3d(1, .5, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, 0, 1, 0, 
+                    0, -100, 0, 1);
+		opacity: 1;
+	}
+60% {transform: matrix3d(1, -.5, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, 0, 1, 0, 
+                    0, -50, 0, 1);
+	}
+100% {transform: matrix3d(1, 0, 0, 0, 
+                    0, 1, 0, 0, 
+                    0, 0, 1, 0, 
+                    0, 0, 0, 1);
+			opacity: 1;
+	}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

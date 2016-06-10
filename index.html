@@ -3,9 +3,12 @@
 <head>
 	<meta charset="utf-8" />
 	<title>myAnimations</title>
-	<meta name="description" content=" DESCRIBE YOUR SITE HERE" />
+	<meta name="description" content="Stjepan's creative animation examples for titles
+																that you can use for your site. Copy CSS and JS
+																and even custom the script code to your own design." />
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-	<link rel="stylesheet" href="css/style.css" title="Default CSS" media="all"/>
+	<link rel="stylesheet" href="style.css" media="all"/>
+	<link rel="stylesheet" href="stj_animation.css" media="all"/>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
@@ -30,6 +33,8 @@
 					<option value="fallinplace" >Fall in place</option>
 					<option value="fadein" >FadeIn</option>
 					<option value="zoomin" >ZoomIn</option>
+					<option value="boomerang" >Boomerang</option>
+					<option value="rise" >Rise</option>
 				</optgroup>
 			</select>
 			 <input type="button" class="mybtn play" value="Animate!">
@@ -41,11 +46,32 @@
 		<hr />
 		
 		<div class="info">
-			<div>Download from GitHub</div>
-			<div>View my Portfolio</div>
+			<div><a href="https://github.com/serdeljac/myAnimations/">Download from GitHub</a></div>
+			<div><a href="http://www.serdeljac.com">View my Portfolio</a></div>
 		</div>
 
 	</div>
-	<script src="scripts/java.js"></script>
+	<script src="stj_animation.js"></script>
+	<script>
+		$(document).ready(function() {
+			function changeAnim(x) {
+				$('.display-title div').removeClass().addClass(x);
+			};
+
+			$('.anim-select').change(function() {
+				var new_anim = $(this).val();
+				changeAnim(new_anim);
+			});
+			
+			$('.play').click(function(e) {
+				e.preventDefault();
+				$('.display-title div').removeClass();
+				var new_anim = $('.anim-select').val();
+				setTimeout(function(){
+					changeAnim(new_anim)
+				}, 1);
+			});
+		});
+	</script>
 </body>
 </html>

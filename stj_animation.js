@@ -1,21 +1,23 @@
 $(document).ready(function() {
-	
-	//NEED THIS!
+
 	var title = document.querySelector('.display-title').innerHTML;
 	var titleArray = title.split("");
 	$('.display-title').empty();
 
-	//NEED THIS!
+	//Appends each character to it's own DIV
 	function appendTitle() {
 		for (i = 0; i < titleArray.length; i++) { 
 			var delay = i/4;
 			var inc = i+1;
+			//Delete forward slashes below to randomize the delays
+			//var delay = Math.random(delay)
 			$('.display-title').append("<div>" + titleArray[i] + "</div>");
 			$('.display-title div:nth-of-type(' + inc + ')').removeAttr("style").css("animation-delay", delay + "s"); 
 		}
 	};
-	
-	//NEED THIS!
+
+	/* Force to center the title by grabbing the sum width/height of characters
+	    and adding them to outer div. Adjust if needed here. */
 	function centerTitle() {
 		var sumW = 0;
 		var sumH = 0;
@@ -23,10 +25,9 @@ $(document).ready(function() {
 			sumW += $(this).outerWidth();
 			sumH = $(this).outerHeight();
 		});
-		$(".display-title").width(sumW + 20).height(sumH);
+		$(".display-title").width(sumW + 20).height(sumH).css("margin", "20px auto");
 	};
-	
-	//NEED THIS!
+
 	appendTitle();
 	centerTitle();
 	$(window).resize(function() {
@@ -35,23 +36,7 @@ $(document).ready(function() {
 	
 	
 	
-	function changeAnim(x) {
-		$('.display-title div').removeClass().addClass(x);
-	};
-
-	$('.anim-select').change(function() {
-		var new_anim = $(this).val();
-		changeAnim(new_anim);
-	});
 	
-	$('.play').click(function(e) {
-		e.preventDefault();
-		$('.display-title div').removeClass();
-		var new_anim = $('.anim-select').val();
-		setTimeout(function(){
-			changeAnim(new_anim)
-		}, 1);
-	});
 	
 });
 
