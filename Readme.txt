@@ -21,9 +21,10 @@ Easily, just follow these instructions:
 		a) <link rel="stylesheet" href="stj_animation.css" media="all"/>
 		b)	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
 		c) <script src="stj_animation.js"></script>
-	3) Next add the two classes to a div tag, "display-title" and "<animation name>"
+	3) Next add the class to the div tag, "display-title"
+		EX. <div class="display-title">YOUR TITLE HERE</div>
+	4) Then add your animation to the addClass property in line 19 in the stj.animation.js file
 
-	EX. <div class="display-title pulse">YOUR TITLE HERE</div>
 	
 	NOTE: The animation requires you to use straight text into a DIV tag. The JavaScript will
 				break each chracter you placed into the HTML.

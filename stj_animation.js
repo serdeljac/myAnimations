@@ -12,7 +12,11 @@ $(document).ready(function() {
 			//Delete forward slashes below to randomize the delays
 			//var delay = Math.random(delay)
 			$('.display-title').append("<div>" + titleArray[i] + "</div>");
-			$('.display-title div:nth-of-type(' + inc + ')').removeAttr("style").css("animation-delay", delay + "s"); 
+			$('.display-title div:nth-of-type(' + inc + ')').removeAttr("style")
+																				.css("animation-delay", delay + "s")
+																				.css("position", "relative")
+																				.css("float", "left")
+																				.addClass('');  //ADD THE ANIMATION NAME HERE!
 		}
 	};
 
