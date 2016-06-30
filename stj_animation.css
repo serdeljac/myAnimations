@@ -4,7 +4,6 @@
 .fadeslide {
 	-webkit-animation: fadeslide 3s linear infinite;
 	animation: fadeslide 3s linear infinite;
-	animation: fadeslide 3s linear infinite;
 	}
 	
 @-webkit-keyframes fadeslide {
