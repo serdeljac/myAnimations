@@ -22,8 +22,7 @@
 
 		<form class="animation-container checkbox">
 			<select class="form-control anim-select"  name="animate">
-				
-				<optgroup label="Loops" class="loop">
+				<optgroup label="Loops">
 					<option value="fadeslide" >Fade_Slide</option>
 					<option value="pulse" >Pulse</option>
 					<option value="wave" >Wave</option>
@@ -40,38 +39,16 @@
 			 <input type="button" class="mybtn play" value="Animate!">
 		</form>
 		
-		<!-- ADD CLASS "display-title" FOR ANIMATIONS-->
-		<div class="display-title" >ANIMATION</div>
-		
-		<hr />
-		
+		<div class="stj-title" >My Animation Set</div>
+
 		<div class="info">
+		<hr />
 			<div><a href="https://github.com/serdeljac/myAnimations/">Download from GitHub</a></div>
 			<div><a href="http://www.serdeljac.com">View my Portfolio</a></div>
 		</div>
 
 	</div>
+	<script src="java.js"></script>
 	<script src="stj_animation.js"></script>
-	<script>
-		$(document).ready(function() {
-			function changeAnim(x) {
-				$('.display-title div').removeClass().addClass(x);
-			};
-
-			$('.anim-select').change(function() {
-				var new_anim = $(this).val();
-				changeAnim(new_anim);
-			});
-			
-			$('.play').click(function(e) {
-				e.preventDefault();
-				$('.display-title div').removeClass();
-				var new_anim = $('.anim-select').val();
-				setTimeout(function(){
-					changeAnim(new_anim)
-				}, 1);
-			});
-		});
-	</script>
 </body>
 </html>
