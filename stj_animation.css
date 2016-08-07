@@ -1,21 +1,3 @@
-.stj-title {
-	padding: 0;
-	background: transparent;
-	margin: auto;
-	}
-	
-.stj-gap {
-	width: .3em;
-	float:left;
-	height: 1px;
-	position: relative;
-	}
-	
-.stj-anim {
-	float: left;
-	position: relative;
-	}
-
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 
@@ -121,19 +103,18 @@
 	transform: translateY(-300%);
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
-	opacity: 0;
 	}
 	
 @-webkit-keyframes fallinplace {
-	0% {transform: translateY(-300%); opacity: 0;}
+	0% {transform: translateY(-300%);}
 	40% {transform: translateY(20%);}
-	60%, 100% {transform: translateY(0%);opacity: 1;}
+	60%, 100% {transform: translateY(0%);}
 	}
 	
 @keyframes fallinplace {
-	0% {transform: translateY(-300%); opacity: 0;}
+	0% {transform: translateY(-300%);}
 	40% {transform: translateY(20%);}
-	60%, 100% {transform: translateY(0%);opacity: 1;}
+	60%, 100% {transform: translateY(0%);}
 	}
 
 /*---------------------------------------------------------------------------------------------*/

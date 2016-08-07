@@ -22,5 +22,14 @@ Easily, just follow these instructions:
 		b)	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
 		c) <script src="stj_animation.js"></script>
 	3) Next add the class to the div tag, "display-title"
-		EX. <div class="stj-title">YOUR TITLE HERE</div>
-	4) Then add your animation to the addClass property in line 18 in the stj.animation.js file
+		EX. <div class="display-title">YOUR TITLE HERE</div>
+	4) Then add your animation to the addClass property in line 19 in the stj.animation.js file
+
+	
+	NOTE: The animation requires you to use straight text into a DIV tag. The JavaScript will
+				break each chracter you placed into the HTML.
+
+Can I add a space in my title?
+
+Unfortunatly, not in my current version. For now, you can add a character like "." or "_" to
+seperate words. I will be working to fix this. 
