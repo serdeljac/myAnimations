@@ -26,11 +26,8 @@ $(document).ready(function() {
 		$('.stj-title').css("width", sumW);
 		
 		//When animation finished, reset title to old state (OPTIONAL)
-		/*
-		$('.stj-title div:last-child').one('webkitAnimationEnd oAnimationend oAnimationEnd msAnimationEnd animationend', function() {
-			$('.stj-title').empty().html(title);
-		});
-		*/
+			//$('.stj-title div:last-child').one('webkitAnimationEnd oAnimationend oAnimationEnd msAnimationEnd animationend', function() {$('.stj-title').empty().html(title);});
+		
 });
 
 
