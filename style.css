@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500&subset=latin,latin-ext);
 
+.stj-title {
+	font-weight: bold;
+	font-size: 7em;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	}
 	
 .title {width: 60%;	margin: 30px auto 0;}
 .title img {width: 100%;}
@@ -8,7 +14,7 @@
 	.title {width: 85%;}
 	}
 	
-hr {width: 100%; float: left; margin-top: 200px;}
+.info hr {width: 100%; float: left; border: 1px solid #777;}
 	
 .info {
 	width: 100%;
@@ -82,26 +88,19 @@ hr {width: 100%; float: left; margin-top: 200px;}
 	.animation-container select {width: 90%; margin: 20px 5%;}
 	}
 
-.display-title {
-	font-weight: bold;
-	font-size: 10em;
-	font-family: 'Poppins', sans-serif;
-	background: #FFF;
-	padding: 0;
-	margin-left: 15%;
-	}
+
 	
 @media (max-width: 992px) {
-	.display-title {font-size: 6.8em; margin-left: 10%}
+	.stj-title {font-size: 6.8em; margin-left: 10%}
 	.info div {width: 100%;}
 	}
 	
 @media (max-width: 768px) {
-	.display-title {font-size: 4.8em; margin-left: 17%}
+	.stj-title {font-size: 4.8em; margin-left: 17%}
 	}
 	
 @media (max-width: 500px) {
-	.display-title {margin-left: 12%; font-size: 2.8em}
+	.stj-title {margin-left: 12%; font-size: 2.8em}
 	}
 	
 	
