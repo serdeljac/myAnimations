@@ -5,50 +5,79 @@
 	<title>myAnimations</title>
 	<meta name="description" content="Stjepan's creative animation examples for titles
 																that you can use for your site. Copy CSS and JS
-																and even custom the script code to your own design." />
+																and even custom the script code to your own design. Download myAnimations script from GitHub" />
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<link rel="stylesheet" href="stj_animations.css" media="all"/>
 	<link rel="stylesheet" href="style.css" media="all"/>
-	<link rel="stylesheet" href="stj_animation.css" media="all"/>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
-	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 </head>
 <body>
-	<div class="container">
+	<header>
+		<h1><span>STJ</span>animations</h1>
+	</header>
 	
-		<div class="title">
-			<img src="title.png" alt="Stjepan.Animations" />
-		</div>
+	<main>
+		<section class="mainsection">
+			<h2>Your Title Here</h2>
+			<hr />
+			<form>
+				<select name="animate">
+					<optgroup label="">
+						<option value="none">Select an animation...</option>
+					</optgroup>
+					<optgroup label="Loops">
+						<option value="stj_fadeslide">Fade_Slide</option>
+						<option value="stj_pulse">Pulse</option>
+						<option value="stj_wave">Wave</option>
+						<option value="stj_flashlgt">Flashing Lights</option>
+					</optgroup>
+					<optgroup label="One Time Show">
+						<option value="stj_fallinplace">Fall in place</option>
+						<option value="stj_fadein">FadeIn</option>
+						<option value="stj_zoomin">ZoomIn</option>
+						<option value="stj_boomerang">Boomerang</option>
+						<option value="stj_rise">Rise</option>
+					</optgroup>
+				</select>
+			</form>
+		</section>
+		<section class="downloadsection">
+			<h2>Like what you see?</h2>
+			<ul>
+				<li><a href="https://github.com/serdeljac/myAnimations/">Download from GitHub</a></li>
+				<li><a href="http://www.serdeljac.com">View my Portfolio</a></li>
+			</ul>
+		</section>
+	</main>
 
-		<form class="animation-container checkbox">
-			<select class="form-control anim-select"  name="animate">
-				<optgroup label="Loops">
-					<option value="fadeslide" >Fade_Slide</option>
-					<option value="pulse" >Pulse</option>
-					<option value="wave" >Wave</option>
-					<option value="flashlgt" >Flashing Lights</option>
-				</optgroup>
-				<optgroup label="One Time Show">
-					<option value="fallinplace" >Fall in place</option>
-					<option value="fadein" >FadeIn</option>
-					<option value="zoomin" >ZoomIn</option>
-					<option value="boomerang" >Boomerang</option>
-					<option value="rise" >Rise</option>
-				</optgroup>
-			</select>
-			 <input type="button" class="mybtn play" value="Animate!">
-		</form>
+	<script>
+		$(document).ready(function() {
+	
+	//Set select value to nothing
+	$('select').val('none').change();
+	
+	//Set location of title
+	var title = $('.mainsection h2');
+	
+	
+	$('select').change(function() {
+		title.removeAttr('class');
+		//Get and store the new selected value
+		var animation = $('select').val();
+
 		
-		<div class="stj-title" >My Animation Set</div>
+		//Append the new animation
+		title.addClass(animation);
+		
+	})
 
-		<div class="info">
-		<hr />
-			<div><a href="https://github.com/serdeljac/myAnimations/">Download from GitHub</a></div>
-			<div><a href="http://www.serdeljac.com">View my Portfolio</a></div>
-		</div>
 
-	</div>
-	<script src="java.js"></script>
-	<script src="stj_animation.js"></script>
+});
+	</script>
 </body>
 </html>

@@ -2,33 +2,30 @@
 All Animations are created by Stjepan Erdeljac (2016)
 ----------------------------------------------------------------------------------------------------------------------------------
 
-v1.1 	- Adjusted to allow whitespace
-		- Added "boomerang" and "rise" animations
-		
-v1.2 - Centered title using margin auto
-
-v1.3 - Included reset of stj-title children to inital state (optional)
-
 
 What are these animations?
 
-These animations are used to animate titles of various websites as part of an introduction. Though
-they are not set in stone, I have made a guideline on how to implement and edit the CSS/JS scripts
-for your conveience.
+These animations are used to animate titles of various websites as part of an introduction. These animations do
+not require jQuery or any framework. Feel free to implement and modify any files to suit your site.
 
-What do I need?
+Installation:
 
-Not much, just the Zip file you can download from GitHub containing my animation and jquery
-added above the stj_animations.js script.
+	1) Attach the css to the top your page:
+		<link rel="stylesheet" href="stj_animations.css" media="all"/>
+	
+	2) Append the two classes to a element:
+		class="<type>"
+			|
+			-- stj_fadeslide
+			-- stj_fadein
+			-- stj_pulse
+			-- stj_wave
+			-- stj_flashlgt
+			-- stj_fallinplace
+			-- stj_zoomin
+			-- stj_boomerang
+			-- stj_rise
+		
+	3) Enjoy
 
-How to I add these to my site?
-
-Easily, just follow these instructions:
-	1) Copy the "stj.animation.css" and "stj.animation.js" info your web folder
-	2) Add the following links to the web page"
-		a) <link rel="stylesheet" href="stj_animation.css" media="all"/>
-		b)	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
-		c) <script src="stj_animation.js"></script>
-	3) Next add the class to the div tag, "display-title"
-		EX. <div class="stj-title">YOUR TITLE HERE</div>
-	4) Then add your animation to the addClass property in line 18 in the stj.animation.js file
+stj_animations is open-source and are unlicensed

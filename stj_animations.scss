@@ -1,25 +1,8 @@
-.stj-title {
-	padding: 0;
-	background: transparent;
-	margin: auto;
-	}
-	
-.stj-gap {
-	width: .3em;
-	float:left;
-	height: 1px;
-	position: relative;
-	}
-	
-.stj-anim {
-	float: left;
-	position: relative;
-	}
 
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 
-.fadeslide {
+.stj_fadeslide {
 	-webkit-animation: fadeslide 3s linear infinite;
 	animation: fadeslide 3s linear infinite;
 	}
@@ -37,7 +20,7 @@
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 
-.fadein {
+.stj_fadein {
 	-webkit-animation: fadein 4s 1;
 	animation: fadein 4s 1;
 	opacity: 0;
@@ -58,9 +41,10 @@
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 	
-.pulse {
+.stj_pulse {
 	-webkit-animation: pulse 2s linear infinite;
 	animation: pulse 2s linear infinite;
+	
 	}
 	
 @-webkit-keyframes pulse {
@@ -76,9 +60,10 @@
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 	
-.wave {
+.stj_wave {
 	-webkit-animation: wave 2s linear infinite;
 	animation: wave 2s linear infinite;
+	position: relative;
 	}
 	
 @-webkit-keyframes wave {
@@ -96,7 +81,7 @@
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 
-.flashlgt {
+.stj_flashlgt {
 	-webkit-animation: flashlgt 2s linear infinite;
 	animation: flashlgt 2s linear infinite;
 	}
@@ -115,7 +100,7 @@
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 
-.fallinplace {
+.stj_fallinplace {
 	-webkit-animation: fallinplace 2s linear 1;
 	animation: fallinplace 2s linear 1;
 	transform: translateY(-300%);
@@ -139,7 +124,7 @@
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 
-.zoomin {
+.stj_zoomin {
 	-webkit-animation: zoomin 1s linear 1;
 	animation: zoomin 1s linear 1;
 	-webkit-animation-fill-mode: forwards;
@@ -149,21 +134,21 @@
 	}
 	
 @-webkit-keyframes zoomin {
-	0% {opacity: 0; font-size: 0em;}
+	0% {opacity: 0; font-size: 0px;}
 	5% {opacity: 1;}
-	100% {opacity: 1; font-size: 1em;}
+	100% {opacity: 1;}
 	}
 	
 @keyframes zoomin {
-	0% {opacity: 0; font-size: 0em;}
+	0% {opacity: 0; font-size: 0px;}
 	5% {opacity: 1;}
-	100% {opacity: 1; font-size: 1em;}
+	100% {opacity: 1;}
 	}
 
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 
-.boomerang {
+.stj_boomerang {
 	-webkit-animation: boomerang 1s linear 1;
 	animation: boomerang 1s linear 1;
 	-webkit-animation-fill-mode: forwards;
@@ -208,7 +193,7 @@
 /*---------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------*/
 
-.rise {
+.stj_rise {
 	-webkit-animation: rise 1s linear 1;
 	animation: rise 1s linear 1;
 	-webkit-animation-fill-mode: forwards;
