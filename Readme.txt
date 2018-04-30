@@ -28,5 +28,3 @@ Installation:
 			 stj_rise
 		
 	3) Enjoy
-
-stj_animations is open-source and are unlicensed
